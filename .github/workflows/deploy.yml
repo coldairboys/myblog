@@ -29,11 +29,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Project site: https://<user>.github.io/<repo>/  → Vite base must be /repo/
-      # User/org site: repo named <user>.github.io      → base stays /
+      # Project site: https://<user>.github.io/<repo>/  → default base is /repo/
+      # Custom domain on that project site is served at domain root → set repo variable VITE_BASE=/
+      # User/org site: repo named <user>.github.io → default base /
       - name: Build
         env:
-          VITE_BASE: ${{ endsWith(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name) }}
+          VITE_BASE: ${{ vars.VITE_BASE || (endsWith(github.event.repository.name, '.github.io') && '/' || format('/{0}/', github.event.repository.name)) }}
         run: npm run build
 
       - name: Upload artifact

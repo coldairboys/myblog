@@ -55,6 +55,8 @@ npm run dev
 
 如果本地部署没有任何问题, 那么现在就可以部署了, 首先你需要先进入blog的仓库, 点击setting -> pages -> Build and deployment -> Source -> GitHub Actions -> Save,
 
+然后切换到Settings -> Secrets and variables -> Actions -> Variables -> New repository variable -> Name: VITE_BASE -> Value: / -> Add variable -> Save
+
 然后登陆git(具体操作请自行搜索), 然后输入
 ```bash
 git add .
