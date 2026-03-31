@@ -11,7 +11,7 @@ export function UpdateNotice() {
 
   if (!updateCfg?.enabled) return null
 
-  const repo = updateCfg.repo ?? 'Little100/blog'
+  const repo = updateCfg.repo ?? 'coldairboys/myblog'
   const changelogUrl = `https://github.com/${repo}/BLOG/main/CHANGELOG.md`
   const releasesUrl = `https://github.com/${repo}/releases`
 

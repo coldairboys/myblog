@@ -32,7 +32,7 @@ const UPDATE_CFG = (siteConfig as Record<string, unknown>).updates as
   | undefined
 
 function siteRepoUrl(): string {
-  const repo = UPDATE_CFG?.repo ?? 'Little100/blog'
+  const repo = UPDATE_CFG?.repo ?? 'coldairboys/myblog'
   return `https://github.com/${repo}`
 }
 

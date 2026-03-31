@@ -1,7 +1,7 @@
 {
-  "title": "Little100's BLOG",
+  "title": "Coldairboy's BLOG",
   "avatar": "/avatar.png",
-  "defaultAuthor": "Little100",
+  "defaultAuthor": "Coldairboy",
   "exportContactPath": "/contact",
   "contact": {
     "sections": []
@@ -15,7 +15,7 @@
   "defaultLanguage": "zh",
   "giscus": {
     "enabled": true,
-    "repo": "Little100/myblog",
+    "repo": "coldairboys/myblog",
     "repoId": "R_kgDOR1A4Lg",
     "category": "Announcements",
     "categoryId": "DIC_kwDOR1A4Ls4C5oqZ",
@@ -28,8 +28,8 @@
   "social": [
     {
       "platform": "github",
-      "href": "https://github.com/Little100",
-      "detail": "Little100",
+      "href": "https://github.com/coldairboys",
+      "detail": "Coldairboy",
       "label": "GitHub",
       "icon": "fab fa-github"
     },
@@ -57,7 +57,7 @@
   ],
   "footer": {
     "tagline": "Markdown on the fly · custom blocks via the tokenizer",
-    "copyright": "© 2026 Little100. All rights reserved.",
+    "copyright": "© 2026 Coldairboy. All rights reserved.",
     "links": [
       { "label": "About", "href": "/about" },
       { "label": "Tags", "href": "/tags" },
@@ -66,10 +66,10 @@
     ]
   },
   "seo": {
-    "siteUrl": "https://blog.little100.cn",
-    "description": "Little100's personal blog about writing, photography, and web experiments.",
-    "title": "Little100's BLOG",
-    "twitterHandle": "@little100",
+    "siteUrl": "https://coldairboys.github.io/myblog",
+    "description": "Coldairboy's personal blog about writing, photography, and web experiments.",
+    "title": "Coldairboy's BLOG",
+    "twitterHandle": "@Coldairboy",
     "ogImage": "/og-image.png"
   },
   "icons": {
@@ -90,6 +90,6 @@
   },
   "updates": {
     "enabled": true,
-    "repo": "Little100/myblog"
+    "repo": "coldairboys/myblog"
   }
 }

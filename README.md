@@ -52,7 +52,7 @@ npm run build
    GitHub Actions 会自动构建并部署。
 
 4. **访问你的博客**：
-   - 博客地址：`https://Little100.github.io/myblog/`
+   - 博客地址：`https://coldairboys.github.io/myblog/`
    - 或如果你使用自定义域名，在 DNS 设置中配置即可。
 
 ### 本地构建预览
@@ -128,7 +128,7 @@ VITE_GISCUS_REPO_ID=R_xxxxxxxxxxxxxx
 
 在 [giscus.app](https://giscus.app) 填写：
 
-- **Repository**: `Little100/myblog`
+- **Repository**: `coldairboys/myblog`
 - **Page ↔️ Discussions Mapping**: `pathname`
 - **Discussion Category**: 选择一个分类（如 "Announcements"）
 

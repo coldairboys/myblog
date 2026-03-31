@@ -3,7 +3,7 @@ title: A Public-Interest FRP Service!
 description: Recommending chmlfrp
 date: 2026-03-30
 lastEdited: 2026-03-31
-author: Little100
+author: Coldairboy
 readMinutes: 4
 tags: ["Recommendation", "FRP", "Public Interest", "Network Tunneling", "Multiplayer"]
 icon: "https://www.chmlfrp.net/favicon.ico"

@@ -8,7 +8,7 @@ Good-natured and welcoming — feel free to reach out!
 
 ## Contact
 
-- [Website](https://www.little100.cn) (little100.cn)
+- [Website](https://coldairboys.github.io/myblog) (coldairboys.github.io/myblog)
 - [Bilibili](https://space.bilibili.com/1492647738)
 - [QQ: 2662308929](tencent://message/?uin=2662308929&Site=qq&Menu=yes)
 - [QQ Group: 1032430138](https://qm.qq.com/q/1ElgViwAOc)

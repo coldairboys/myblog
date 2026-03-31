@@ -3,7 +3,7 @@ title: Fxxk you Intel
 description: 糞な青廠を戯ける
 date: 2026-03-30
 lastEdited: 2026-03-30
-author: Little100
+author: Coldairboy
 readMinutes: 4
 tags: ["戯評", "Intel", "DIY", "ハードウェア", "グラボ", "CPU"]
 icon: "http://103.236.71.225:10036/pic/i/2026/03/30/p1pii0-3.webp"

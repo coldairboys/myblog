@@ -1,9 +1,9 @@
 ---
 title: 如何搭建我的blog?
-description: 搭建Little100's的blog模板
+description: 搭建Coldairboy's的blog模板
 date: 2026-03-31
 lastEdited: 2026-03-31
-author: Little100
+author: Coldairboy
 readMinutes: 4
 tags: ["教程",]
 icon: "public/avatar.png"
@@ -23,12 +23,12 @@ icon: "public/avatar.png"
 ## 开始
 
 ### 1. 克隆仓库
-首先点击右上角github图标或者[点击这里](https://github.com/Little100/blog)跳转到我的blog仓库, 点击fork, 一路无脑下一步, 直到看到仓库正常显示内容。
+首先点击右上角github图标或者[点击这里](https://github.com/coldairboys/myblog)跳转到我的blog仓库, 点击fork, 一路无脑下一步, 直到看到仓库正常显示内容。
 
 ### 2. 本地编辑
 如果下载了git则直接打开命令行输入git clone 你的fork仓库的url, 例如:
 ```bash
-git clone https://github.com/Little100/blog.git
+git clone https://github.com/coldairboys/myblog.git
 ```
 如果没有则需要前往你的仓库页面点击code(中文微软翻译会变成法典), 点击最下面的按钮(Download ZIP), 解压到你喜欢的位置。
 
@@ -72,7 +72,7 @@ git push origin main
 
 安装完成后返回到你的blog仓库页面, 点击setting -> 往下翻 -> Discussions -> 勾选
 
-接着返回[giscus官网](https://giscus.app/), 找到仓库: 填写你的github用户名/你的blog仓库名称, 例如Little100/blog, 然后点击下一步, 选择你喜欢的主题, 点击下一步, 在下方可以看到类似于
+接着返回[giscus官网](https://giscus.app/), 找到仓库: 填写你的github用户名/你的blog仓库名称, 例如coldairboys/myblog, 然后点击下一步, 选择你喜欢的主题, 点击下一步, 在下方可以看到类似于
 ```html
 <script src="https://giscus.app/client.js"
         data-repo="[在此输入仓库]"

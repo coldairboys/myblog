@@ -140,7 +140,7 @@ export const STRINGS: Record<Locale, Record<string, string>> = {
 
     'post.mobileTitle': 'Blog Post',
 
-    'focus.siteName': "Little100's BLOG",
+    'focus.siteName': "Coldairboy's BLOG",
     'focus.close': 'Exit focus',
     'focus.themeLight': 'Light',
     'focus.themeDark': 'Dark',
@@ -297,7 +297,7 @@ export const STRINGS: Record<Locale, Record<string, string>> = {
 
     'post.mobileTitle': 'ブログ記事',
 
-    'focus.siteName': "Little100's BLOG",
+    'focus.siteName': "Coldairboy's BLOG",
     'focus.close': 'フォーカスを終了',
     'focus.themeLight': 'ライト',
     'focus.themeDark': 'ダーク',
@@ -454,7 +454,7 @@ export const STRINGS: Record<Locale, Record<string, string>> = {
 
     'post.mobileTitle': '博客文章',
 
-    'focus.siteName': "Little100's BLOG",
+    'focus.siteName': "Coldairboy's BLOG",
     'focus.close': '退出专注',
     'focus.themeLight': '浅色',
     'focus.themeDark': '深色',
@@ -611,7 +611,7 @@ export const STRINGS: Record<Locale, Record<string, string>> = {
 
     'post.mobileTitle': '部落格文章',
 
-    'focus.siteName': "Little100's BLOG",
+    'focus.siteName': "Coldairboy's BLOG",
     'focus.close': '退出專注',
     'focus.themeLight': '淺色',
     'focus.themeDark': '深色',

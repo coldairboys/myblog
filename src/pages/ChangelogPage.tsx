@@ -65,7 +65,7 @@ export function ChangelogPage() {
   const updateCfg = (siteConfig as Record<string, unknown>).updates as
     | { enabled: boolean; repo: string }
     | undefined
-  const repo = updateCfg?.repo ?? 'Little100/blog'
+  const repo = updateCfg?.repo ?? 'coldairboys/myblog'
 
   useEffect(() => {
     let cancelled = false

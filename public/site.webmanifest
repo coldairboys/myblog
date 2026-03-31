@@ -1,7 +1,7 @@
 {
-  "name": "Little100's BLOG",
+  "name": "Coldairboy's BLOG",
   "short_name": "BLOG",
-  "description": "Little100's personal blog about writing, photography, and web experiments.",
+  "description": "Coldairboy's personal blog about writing, photography, and web experiments.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

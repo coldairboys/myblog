@@ -3,7 +3,7 @@ title: 公益のFRPサービス!
 description: chmlfrpをお勧めします
 date: 2026-03-30
 lastEdited: 2026-03-31
-author: Little100
+author: Coldairboy
 readMinutes: 4
 tags: ["おすすめ", "FRP", "公益", "ネットワーク穿透", "マルチプレイ"]
 icon: "https://www.chmlfrp.net/favicon.ico"

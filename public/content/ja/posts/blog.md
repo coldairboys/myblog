@@ -1,9 +1,9 @@
 ---
 title: 私のblog построить方法
-description: Little100のblogテンプレート構築ガイド
+description: Coldairboyのblogテンプレート構築ガイド
 date: 2026-03-31
 lastEdited: 2026-03-31
-author: Little100
+author: Coldairboy
 readMinutes: 4
 tags: ["教程",]
 icon: "public/avatar.png"
@@ -23,7 +23,7 @@ icon: "public/avatar.png"
 ## 始めよう
 
 ### 1. リポジトリをクローン
-右上隅のGitHubアイコンをクリックするか、[ここをクリック](https://github.com/Little100/blog)にアクセスして、私のblogリポジトリに飛び、Forkをクリック、何ステップか次へ進むと、リポジトリが正常に表示されます。
+右上隅のGitHubアイコンをクリックするか、[ここをクリック](https://github.com/coldairboys/myblog)にアクセスして、私のblogリポジトリに飛び、Forkをクリック、何ステップか次へ進むと、リポジトリが正常に表示されます。
 
 ### 2. ローカル編集
 Gitをインストール済みなら、ターミナルを開いて以下を入力：
@@ -78,7 +78,7 @@ git push origin main
 
 インストール後、blogリポジトリにアクセスし、Settings → 下にスクロール → Discussions → チェックを入れます。
 
-次に[Giscus公式サイト](https://giscus.app/)に戻り、リポジトリ欄にGitHubユーザー名/リポジトリ名（例：`Little100/blog`）を入力して次へ、好きなテーマを選んで次へ進むと、下部に以下のようなコードが表示されます：
+次に[Giscus公式サイト](https://giscus.app/)に戻り、リポジトリ欄にGitHubユーザー名/リポジトリ名（例：`coldairboys/myblog`）を入力して次へ、好きなテーマを選んで次へ進むと、下部に以下のようなコードが表示されます：
 
 ```html
 <script src="https://giscus.app/client.js"

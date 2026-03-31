@@ -8,7 +8,7 @@ Little_100、2008年生まれ。主にサンドボックスゲーム（Minecraft
 
 ## 連絡先
 
-- [個人サイト](https://www.little100.cn)（little100.cn）
+- [個人サイト](https://coldairboys.github.io/myblog)（coldairboys.github.io/myblog）
 - [哔哩哔哩](https://space.bilibili.com/1492647738)
 - [QQ: 2662308929](tencent://message/?uin=2662308929&Site=qq&Menu=yes)
 - [QQ群: 1032430138](https://qm.qq.com/q/1ElgViwAOc)

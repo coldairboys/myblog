@@ -8,8 +8,8 @@ const ROOT = path.join(__dirname, '..')
 const configPath = path.join(ROOT, 'config.json')
 const config = JSON.parse(fs.readFileSync(configPath, 'utf8'))
 const siteUrl = config.seo?.siteUrl || 'https://your-domain.com'
-const siteTitle = config.title || "Little100's Blog"
-const repo = config.updates?.repo || 'Little100/blog'
+const siteTitle = config.title || "Coldairboy's Blog"
+const repo = config.updates?.repo || 'coldairboys/myblog'
 
 const languages = Array.isArray(config.languages) ? config.languages : ['en']
 const defaultLanguage = config.defaultLanguage || languages[0] || 'en'
@@ -134,7 +134,7 @@ function generateAtom() {
   <id>${siteUrl}/</id>
   <updated>${updated}T00:00:00Z</updated>
   <author>
-    <name>${escapeXml(config.defaultAuthor || 'Little100')}</name>
+    <name>${escapeXml(config.defaultAuthor || 'Coldairboy')}</name>
   </author>
   <generator uri="https://vitejs.dev/">Vite</generator>
   <icon>${siteUrl}/avatar.png</icon>

@@ -3,7 +3,7 @@ title: Fxxk You Intel
 description: 吐槽破爛藍廠
 date: 2026-03-30
 lastEdited: 2026-03-30
-author: Little100
+author: Coldairboy
 readMinutes: 4
 tags: ["吐槽", "Intel", "DIY", "硬體", "顯示卡", "CPU"]
 icon: "http://103.236.71.225:10036/pic/i/2026/03/30/p1pii0-3.webp"

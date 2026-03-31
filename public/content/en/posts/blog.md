@@ -1,9 +1,9 @@
 ---
 title: How to Build My Blog?
-description: Little100's blog template setup guide
+description: Coldairboy's blog template setup guide
 date: 2026-03-31
 lastEdited: 2026-03-31
-author: Little100
+author: Coldairboy
 readMinutes: 4
 tags: ["Tutorial",]
 icon: "public/avatar.png"
@@ -23,7 +23,7 @@ icon: "public/avatar.png"
 ## Getting Started
 
 ### 1. Clone the Repository
-Click the GitHub icon in the top-right corner or [click here](https://github.com/Little100/blog) to go to my blog repo, click fork, follow the prompts without thinking, until the repo displays its content normally.
+Click the GitHub icon in the top-right corner or [click here](https://github.com/coldairboys/myblog) to go to my blog repo, click fork, follow the prompts without thinking, until the repo displays its content normally.
 
 ### 2. Local Editing
 If you have Git installed, open your terminal and type:
@@ -78,7 +78,7 @@ First, visit the [Giscus website](https://giscus.app/), scroll down to the repo 
 
 Once installed, go to your blog repo, click Settings -> scroll down -> Discussions -> check the box.
 
-Then go back to the [Giscus website](https://giscus.app/), fill in the repo field with your GitHub username/repo name, e.g. `Little100/blog`, click next, pick your preferred theme, click next. You'll see code like this at the bottom:
+Then go back to the [Giscus website](https://giscus.app/), fill in the repo field with your GitHub username/repo name, e.g. `coldairboys/myblog`, click next, pick your preferred theme, click next. You'll see code like this at the bottom:
 
 ```html
 <script src="https://giscus.app/client.js"

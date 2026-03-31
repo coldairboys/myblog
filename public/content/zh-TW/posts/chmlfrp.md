@@ -3,7 +3,7 @@ title: 一個公益的 FRP！
 description: 推薦 chmlfrp
 date: 2026-03-30
 lastEdited: 2026-03-31
-author: Little100
+author: Coldairboy
 readMinutes: 4
 tags: ["推薦", "FRP", "公益", "網路穿透", "聯機"]
 icon: "https://www.chmlfrp.net/favicon.ico"

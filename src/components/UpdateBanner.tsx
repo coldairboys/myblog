@@ -28,7 +28,7 @@ export function UpdateBanner() {
     | { enabled: boolean; repo: string }
     | undefined
   const enabled = updateCfg?.enabled ?? false
-  const repo = updateCfg?.repo ?? 'Little100/blog'
+  const repo = updateCfg?.repo ?? 'coldairboys/myblog'
 
   useEffect(() => {
     if (!enabled || dismissed) return

@@ -1,9 +1,9 @@
 ---
 title: 如何建構我的部落格？
-description: 建構 Little100's 的部落格模板
+description: 建構 Coldairboy's 的部落格模板
 date: 2026-03-31
 lastEdited: 2026-03-31
-author: Little100
+author: Coldairboy
 readMinutes: 4
 tags: ["教程",]
 icon: "public/avatar.png"
@@ -23,7 +23,7 @@ icon: "public/avatar.png"
 ## 開始
 
 ### 1. 複製倉庫
-首先點擊右上角 GitHub 圖標或[點擊這裡](https://github.com/Little100/blog)跳轉到我的部落格倉庫，點擊 fork，一路無腦下一步，直到看到倉庫正常顯示內容。
+首先點擊右上角 GitHub 圖標或[點擊這裡](https://github.com/coldairboys/myblog)跳轉到我的部落格倉庫，點擊 fork，一路無腦下一步，直到看到倉庫正常顯示內容。
 
 ### 2. 本地編輯
 如果下載了 Git 則直接打開命令列輸入 git clone 你的 fork 倉庫的 url，例如：
@@ -78,7 +78,7 @@ git push origin main
 
 安裝完成後返回到你的部落格倉庫頁面，點擊 Settings → 往下翻 → Discussions → 勾選
 
-接著返回 [Giscus 官網](https://giscus.app/)，找到倉庫：填寫你的 GitHub 用戶名／你的部落格倉庫名稱，例如 Little100/blog，然後點擊下一步，選擇你喜歡的主題，點擊下一步，在下方可以看到類似於：
+接著返回 [Giscus 官網](https://giscus.app/)，找到倉庫：填寫你的 GitHub 用戶名／你的部落格倉庫名稱，例如 coldairboys/myblog，然後點擊下一步，選擇你喜歡的主題，點擊下一步，在下方可以看到類似於：
 
 ```html
 <script src="https://giscus.app/client.js"
