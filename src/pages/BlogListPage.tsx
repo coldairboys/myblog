@@ -56,12 +56,30 @@ export function BlogListPage() {
   const { getLocalePath } = useLocalePath()
   const [searchParams] = useSearchParams()
   const tagSlug = (searchParams.get('tag') ?? '').trim()
+  const searchQuery = (searchParams.get('q') ?? '').trim().toLowerCase()
 
   const posts = POST_INDEX_BY_LOCALE[locale] ?? []
 
   const filtered = useMemo(() => {
-    return posts.filter((p) => postMatchesTagSlug(p, tagSlug))
-  }, [posts, tagSlug])
+    return posts.filter((p) => {
+      if (!postMatchesTagSlug(p, tagSlug)) return false
+      if (!searchQuery) return true
+
+      const haystack = [
+        p.title,
+        p.excerpt,
+        p.description,
+        p.author,
+        p.date,
+        ...(p.tags ?? []),
+      ]
+        .filter(Boolean)
+        .join('\n')
+        .toLowerCase()
+
+      return haystack.includes(searchQuery)
+    })
+  }, [posts, tagSlug, searchQuery])
 
   const filteredKey = useMemo(() => filtered.map((p) => p.slug).join('\0'), [filtered])
   const [visibleCount, setVisibleCount] = useState(BLOG_PAGE_SIZE)
@@ -87,57 +105,98 @@ export function BlogListPage() {
     <div className="page page--blog">
       <div className="layout-split">
         <div className="layout-split__main">
-          <h1 className="page-hero-title">{t('blog.title')}</h1>
-          <ul className="blog-list" ref={listRef}>
-            {visiblePosts.map((post, i) => (
-              <motion.li
-                key={post.slug}
-                className="blog-list__item"
-                style={{ transformOrigin: '0% 50%' }}
-                initial={reduce ? { x: 0, rotateZ: 0 } : { x: -48, rotateZ: -1.25 }}
-                animate={
-                  listInView
-                    ? { x: 0, rotateZ: 0 }
-                    : reduce
-                      ? { x: 0, rotateZ: 0 }
-                      : { x: -48, rotateZ: -1.25 }
-                }
-                transition={
-                  reduce
-                    ? { duration: 0 }
-                    : {
-                        type: 'spring',
-                        stiffness: 280,
-                        damping: 18,
-                        mass: 0.9,
-                        delay: i * 0.065,
-                      }
-                }
-              >
-                <Link to={getLocalePath(`/post/${post.slug}`)} className="blog-row glass-card">
-                  {post.icon && (
-                    <div className="blog-row__thumb">
-                      <SafeImg src={post.icon} alt="" loading="lazy" />
-                    </div>
-                  )}
-                  <div className="blog-row__text">
-                    <h2 className="blog-row__title">{post.title}</h2>
-                    <time className="blog-row__date" dateTime={post.date}>
-                      {post.date}
-                    </time>
-                    {post.excerpt && <p className="blog-row__excerpt">{post.excerpt}</p>}
-                  </div>
+          <section className="blog-hero glass-card">
+            <div>
+              <p className="blog-hero__eyebrow">{t('blog.recent')}</p>
+              <h1 className="page-hero-title blog-hero__title">{t('blog.title')}</h1>
+              <p className="blog-hero__meta">
+                共 {filtered.length} 篇
+                {tagSlug ? <> · 标签：{tagSlug}</> : null}
+                {searchQuery ? <> · 搜索：{searchQuery}</> : null}
+              </p>
+            </div>
+            <Link to={getLocalePath('/tags')} className="blog-hero__link">
+              浏览标签
+              <span aria-hidden> →</span>
+            </Link>
+          </section>
+
+          {filtered.length === 0 ? (
+            <section className="glass-card blog-empty-state">
+              <h2 className="blog-empty-state__title">没有找到匹配文章</h2>
+              <p className="blog-empty-state__desc">
+                你可以换个关键词，或者先去标签页看看。
+              </p>
+              <div className="blog-empty-state__actions">
+                <Link to={getLocalePath('/blog')} className="blog-empty-state__btn blog-empty-state__btn--primary">
+                  查看全部文章
                 </Link>
-              </motion.li>
-            ))}
-            {hasMore ? (
-              <li
-                ref={loadMoreRef}
-                className="blog-list__sentinel"
-                aria-hidden="true"
-              />
-            ) : null}
-          </ul>
+                <Link to={getLocalePath('/tags')} className="blog-empty-state__btn">
+                  浏览标签
+                </Link>
+              </div>
+            </section>
+          ) : (
+            <ul className="blog-list" ref={listRef}>
+              {visiblePosts.map((post, i) => (
+                <motion.li
+                  key={post.slug}
+                  className="blog-list__item"
+                  style={{ transformOrigin: '0% 50%' }}
+                  initial={reduce ? { x: 0, rotateZ: 0 } : { x: -48, rotateZ: -1.25 }}
+                  animate={
+                    listInView
+                      ? { x: 0, rotateZ: 0 }
+                      : reduce
+                        ? { x: 0, rotateZ: 0 }
+                        : { x: -48, rotateZ: -1.25 }
+                  }
+                  transition={
+                    reduce
+                      ? { duration: 0 }
+                      : {
+                          type: 'spring',
+                          stiffness: 280,
+                          damping: 18,
+                          mass: 0.9,
+                          delay: i * 0.065,
+                        }
+                  }
+                >
+                  <Link to={getLocalePath(`/post/${post.slug}`)} className="blog-row glass-card">
+                    {post.icon && (
+                      <div className="blog-row__thumb">
+                        <SafeImg src={post.icon} alt="" loading="lazy" />
+                      </div>
+                    )}
+                    <div className="blog-row__text">
+                      <div className="blog-row__meta">
+                        <time className="blog-row__date" dateTime={post.date}>
+                          {post.date}
+                        </time>
+                        {post.tags?.length ? (
+                          <div className="blog-row__tags" aria-hidden>
+                            {post.tags.slice(0, 3).map((tag) => (
+                              <span key={tag} className="blog-row__tag">#{tag}</span>
+                            ))}
+                          </div>
+                        ) : null}
+                      </div>
+                      <h2 className="blog-row__title">{post.title}</h2>
+                      {post.excerpt && <p className="blog-row__excerpt">{post.excerpt}</p>}
+                    </div>
+                  </Link>
+                </motion.li>
+              ))}
+              {hasMore ? (
+                <li
+                  ref={loadMoreRef}
+                  className="blog-list__sentinel"
+                  aria-hidden="true"
+                />
+              ) : null}
+            </ul>
+          )}
         </div>
 
         <aside className="layout-split__aside" aria-label={t('sidebar.categories')}>

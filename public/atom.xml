@@ -5,13 +5,21 @@
   <link href="https://coldairboys.github.io/myblog/atom.xml" rel="self"/>
   <link href="https://coldairboys.github.io/myblog/"/>
   <id>https://coldairboys.github.io/myblog/</id>
-  <updated>2026-03-31T00:00:00Z</updated>
+  <updated>2026-04-01T00:00:00Z</updated>
   <author>
     <name>Coldairboy</name>
   </author>
   <generator uri="https://vitejs.dev/">Vite</generator>
   <icon>https://coldairboys.github.io/myblog/avatar.png</icon>
   <logo>https://coldairboys.github.io/myblog/og-image.png</logo>
+  <entry>
+    <title>Fxxk you Intel</title>
+    <link href="https://coldairboys.github.io/myblog/post/Fintel" rel="alternate"/>
+    <id>https://coldairboys.github.io/myblog/post/Fintel</id>
+    <updated>2026-03-30T00:00:00Z</updated>
+    <published>2026-03-30T00:00:00Z</published>
+    <summary>Read more about Fxxk you Intel on Coldairboy&apos;s BLOG.</summary>
+  </entry>
   <entry>
     <title>如何搭建我的blog?</title>
     <link href="https://coldairboys.github.io/myblog/post/blog" rel="alternate"/>
@@ -27,13 +35,5 @@
     <updated>2026-03-30T00:00:00Z</updated>
     <published>2026-03-30T00:00:00Z</published>
     <summary>Read more about 一个公益的Frp! on Coldairboy&apos;s BLOG.</summary>
-  </entry>
-  <entry>
-    <title>Fxxk you Intel</title>
-    <link href="https://coldairboys.github.io/myblog/post/Fintel" rel="alternate"/>
-    <id>https://coldairboys.github.io/myblog/post/Fintel</id>
-    <updated>2026-03-30T00:00:00Z</updated>
-    <published>2026-03-30T00:00:00Z</published>
-    <summary>Read more about Fxxk you Intel on Coldairboy&apos;s BLOG.</summary>
   </entry>
 </feed>
